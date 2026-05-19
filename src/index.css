@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+    --color-normal: #B8B8B8;
+    --color-feu: #EE8130;
+    --color-eau: #6390F0;
+    --color-electrik: #F7D06B;
+    --color-plante: #7AC74C;
+    --color-glace: #96D9D6;
+    --color-combat: #C0392B;
+    --color-poison: #A33EA1;
+    --color-sol: #AC7D4A;
+    --color-vol: #70A8E6;
+    --color-psy: #F95587;
+    --color-insecte: #A8B820;
+    --color-roche: #C2AA51;
+    --color-spectre: #705793;
+    --color-dragon: #6F35FC;
+    --color-tenebres: #001520;
+    --color-acier: #B8B8D0;
+    --color-fee: #FFAACC;
+    --color-inconnu: #000000;
+}
+
+@keyframes slide-gradient {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+@layer components {
+    .border-rainbow {
+        background: linear-gradient(
+            90deg,
+            #ff0080, #ff8c00, #ffd700,
+            #00ff88, #00bfff, #8a2be2, #ff0080
+        );
+        background-size: 200% 100%;
+        animation: slide-gradient 3s linear infinite;
+    }
+
+    .theme-normal {
+        background-color: var(--color-normal);
+    }
+    .theme-feu {
+        background-color: var(--color-feu);
+    }
+    .theme-eau {
+        background-color: var(--color-eau);
+    }
+    .theme-electrik {
+        background-color: var(--color-electrik);
+    }
+    .theme-plante {
+        background-color: var(--color-plante);
+    }
+    .theme-glace {
+        background-color: var(--color-glace);
+    }
+    .theme-combat {
+        background-color: var(--color-combat);
+    }
+    .theme-poison {
+        background-color: var(--color-poison);
+    }
+    .theme-sol {
+        background-color: var(--color-sol);
+    }
+    .theme-vol {
+        background-color: var(--color-vol);
+    }
+    .theme-psy {
+        background-color: var(--color-psy);
+    }
+    .theme-insecte {
+        background-color: var(--color-insecte);
+    }   
+    .theme-roche {
+        background-color: var(--color-roche);
+    }
+    .theme-spectre {
+        background-color: var(--color-spectre);
+    }
+    .theme-dragon {
+        background-color: var(--color-dragon);
+    }
+    .theme-tenebres {
+        background-color: var(--color-tenebres);
+        color: white;
+    }
+    .theme-acier {
+        background-color: var(--color-acier);
+    }
+    .theme-fee {
+        background-color: var(--color-fee);
+    }
+    .theme-inconnu {
+        background-color: var(--color-inconnu);
+        color: white;
+    }
+}
